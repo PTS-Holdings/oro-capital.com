@@ -1,9 +1,9 @@
-import Navbar from "components/Navbar";
+import HeroSection from "components/homePage/HeroSection";
 import Head from "next/head";
 
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Oro Capital - Invest Safe Invest ORO</title>
 				<meta
@@ -12,11 +12,8 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
-			
-			<section>
-				<h1>Invest Safe <br/> Invest Oro</h1>
-			</section>
-		</div>
+
+			<HeroSection />
+		</>
 	);
 }
