@@ -1,0 +1,6 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 6,
+    "useTabs": true,
+    "semi": true
+  }

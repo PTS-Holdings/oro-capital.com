@@ -1,3 +1,17 @@
+/* Tailwind Configs */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+/* Custom globals */
+@layer base {
+    html {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+  }
+  
