@@ -1,6 +1,7 @@
 import CircleCard from "components/CircleCard";
 import GlobalMap from "components/homePage/GlobalMap";
 import HeroSection from "components/homePage/HeroSection";
+import Solutions from "components/homePage/Solutions";
 import Subsidiaries from "components/homePage/Subsidiaries";
 import TargetMarkets from "components/homePage/TargetMarkets";
 import Team from "components/homePage/Team";
@@ -23,6 +24,7 @@ export default function Home() {
 			<GlobalMap />
 			<Subsidiaries />
 			<TargetMarkets />
+			<Solutions />
 		</>
 	);
 }
