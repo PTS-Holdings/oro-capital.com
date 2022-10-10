@@ -1,5 +1,6 @@
 import GlobalMap from "components/homePage/GlobalMap";
 import HeroSection from "components/homePage/HeroSection";
+import Subsidiaries from "components/homePage/Subsidiaries";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 
 			<HeroSection />
 			<GlobalMap />
+			<Subsidiaries />
 		</>
 	);
 }
