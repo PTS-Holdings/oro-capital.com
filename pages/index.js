@@ -3,6 +3,7 @@ import GlobalMap from "components/homePage/GlobalMap";
 import HeroSection from "components/homePage/HeroSection";
 import Subsidiaries from "components/homePage/Subsidiaries";
 import TargetMarkets from "components/homePage/TargetMarkets";
+import Team from "components/homePage/Team";
 import Head from "next/head";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 			</Head>
 
 			<HeroSection />
+			<Team />
 			<GlobalMap />
 			<Subsidiaries />
 			<TargetMarkets />
