@@ -12,6 +12,8 @@
     html {
       margin: 0;
       font-family: 'Nunito', sans-serif;
+      color: #28282B;
+      scroll-behavior: smooth;
+
     }
   }
-  
