@@ -1,3 +1,4 @@
+import GlobalMap from "components/homePage/GlobalMap";
 import HeroSection from "components/homePage/HeroSection";
 import Head from "next/head";
 
@@ -14,6 +15,7 @@ export default function Home() {
 			</Head>
 
 			<HeroSection />
+			<GlobalMap />
 		</>
 	);
 }
