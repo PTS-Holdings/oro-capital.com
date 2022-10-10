@@ -3,8 +3,8 @@ import CircleCard from "components/CircleCard";
 const Team = () => {
 	return (
 		<section className=" container md:px-8">
-			<h2 className="mb-8 text-3xl font-bold text-primaryOrange">
-				Our Team
+			<h2 className="mb-8 text-3xl font-bold ">
+				About Our <span className="text-primaryOrange">Team</span>
 			</h2>
 			<div className="mt-4 flex  flex-wrap items-center justify-center gap-10 md:flex-row md:gap-7">
 				<CircleCard text="PHD holders" />

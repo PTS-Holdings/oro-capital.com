@@ -5,7 +5,7 @@ import ventureLogoBlack from "public/assets/ventureLogo-black.svg";
 
 const Subsidiaries = () => {
 	return (
-		<section className="container flex w-full flex-wrap items-center justify-between py-16">
+		<section className="container flex w-full flex-wrap items-center justify-between">
 			<h2 className=" pr-16 text-3xl font-bold">
 				Our <span className="text-primaryOrange">Subsidiaries </span>
 			</h2>
