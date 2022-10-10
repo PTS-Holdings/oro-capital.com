@@ -1,4 +1,5 @@
 import CircleCard from "components/CircleCard";
+import Faq from "components/homePage/Faq";
 import GlobalMap from "components/homePage/GlobalMap";
 import HeroSection from "components/homePage/HeroSection";
 import Solutions from "components/homePage/Solutions";
@@ -25,6 +26,7 @@ export default function Home() {
 			<Subsidiaries />
 			<TargetMarkets />
 			<Solutions />
+			<Faq />
 		</>
 	);
 }
