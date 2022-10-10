@@ -6,8 +6,11 @@ const GlobalMap = () => {
 		<section className="bg-[#F5F5F5] py-16">
 			<div className="container flex w-full flex-wrap items-center justify-between gap-8">
 				<div>
-					<h2 className="mb-4 text-3xl font-semibold">
-						Our Global Presence
+					<h2 className="mb-4 text-3xl font-bold">
+						Our{" "}
+						<span className="text-primaryOrange">
+							Global Presence
+						</span>
 					</h2>
 					<ol className="ml-4">
 						<li className="mb-1">● United Kingdom</li>
