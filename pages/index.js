@@ -19,7 +19,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<ThemeProvider>
+			<ThemeProvider attribute="class">
 				<div className=" dark:bg-neutral-800 dark:text-white">
 					<HeroSection />
 					<Team />
