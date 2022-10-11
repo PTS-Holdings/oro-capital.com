@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	const { systemTheme, theme, setTheme } = useTheme();
+
 	const ThemeChanger = () => {
 		const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -44,12 +45,6 @@ export const Navbar = () => {
 				</button>
 			);
 		}
-		// return (
-
-		// 	<button>
-		// 		<BsFillMoonFill />
-		// 	</button>
-		// );
 	};
 	return (
 		<nav className=" py-5 dark:bg-neutral-800 ">
@@ -64,8 +59,8 @@ export const Navbar = () => {
 				</div>
 				{/* Navigation Links */}
 				<ul
-					className={`absolute z-10  flex w-screen flex-col gap-6
-					 overflow-hidden bg-white transition-all duration-300 ease-in-out
+					className={`absolute z-10  flex w-screen flex-col gap-6 overflow-hidden bg-white
+					 transition-all duration-300 ease-in-out dark:bg-neutral-800 dark:text-white
 					 md:static md:w-auto md:flex-row md:content-center md:items-center ${
 							open ? "h-[90vh]} top-24" : "-top-96"
 						}`}
@@ -75,7 +70,8 @@ export const Navbar = () => {
 							<a href={navLink.link}>{navLink.displayName}</a>
 						</li>
 					))}
-					<li>{ThemeChanger()}</li>
+					{/* <li></li> */}
+					{ThemeChanger()}
 				</ul>
 
 				{/* hamburger button */}
