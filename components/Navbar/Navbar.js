@@ -1,14 +1,20 @@
 import Image from "next/image";
 import oroCapitalBlackLogo from "public/assets/capitalLogo-black.svg";
 import { NavLinks } from "./navLinks";
-
 import { useState } from "react";
 import { BsFillMoonFill } from "react-icons/bs";
 
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
+	const ThemeChanger = () => {
+		return (
+			<button>
+				<BsFillMoonFill />
+			</button>
+		);
+	};
 	return (
-		<nav className=" py-5 ">
+		<nav className=" py-5 dark:bg-neutral-800 ">
 			<div className="container flex content-center justify-between ">
 				<div className="my-auto">
 					<Image
@@ -32,13 +38,13 @@ export const Navbar = () => {
 						</li>
 					))}
 					<li>
-						<BsFillMoonFill />
+						<ThemeChanger />
 					</li>
 				</ul>
 
 				{/* hamburger button */}
 				<div
-					className="relative z-50 my-auto flex h-7 w-7 flex-col items-center justify-between md:hidden"
+					className="relative z-50 my-auto flex h-7 w-7 flex-col items-center justify-between  md:hidden "
 					onClick={() => {
 						setOpen(!open);
 					}}

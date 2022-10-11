@@ -2,8 +2,8 @@ import Accordion from "components/Accordion";
 
 const Faq = () => {
 	return (
-		<section className="container">
-			<h2 className=" mb-4 pr-16 text-3xl font-bold text-primaryOrange">
+		<section className="container 	">
+			<h2 className=" mb-4 pr-16 text-3xl font-bold text-primaryOrange ">
 				FAQ
 			</h2>
 			<Accordion

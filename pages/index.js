@@ -7,7 +7,7 @@ import Subsidiaries from "components/homePage/Subsidiaries";
 import TargetMarkets from "components/homePage/TargetMarkets";
 import Team from "components/homePage/Team";
 import Head from "next/head";
-
+import { ThemeProvider } from "next-themes";
 export default function Home() {
 	return (
 		<>
@@ -19,14 +19,17 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
-			<HeroSection />
-			<Team />
-			<GlobalMap />
-			<Subsidiaries />
-			<TargetMarkets />
-			<Solutions />
-			<Faq />
+			<ThemeProvider>
+				<div className=" dark:bg-neutral-800 dark:text-white">
+					<HeroSection />
+					<Team />
+					<GlobalMap />
+					<Subsidiaries />
+					<TargetMarkets />
+					<Solutions />
+					<Faq />
+				</div>
+			</ThemeProvider>
 		</>
 	);
 }
