@@ -7,7 +7,7 @@ const InfoGrid = () => {
 	return (
 		<section
 			id="aboutUs"
-			className="container flex flex-col gap-12 md:gap-20"
+			className="container flex snap-y snap-start flex-col gap-12	md:gap-20"
 		>
 			{/*------ ROW 1 ----- */}
 			<div className="flex flex-col justify-center pt-8 md:flex-row md:items-center">

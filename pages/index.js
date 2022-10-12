@@ -22,14 +22,15 @@ export default function Home() {
 			</Head>
 
 			<HeroSection />
-
-			<InfoGrid />
-			<Team />
-			<GlobalMap />
-			<Subsidiaries />
-			<TargetMarkets />
-			<Solutions />
-			<Faq />
+			<div className="my-16 flex snap-y snap-start flex-col gap-32	">
+				<InfoGrid />
+				<Team />
+				<GlobalMap />
+				<Subsidiaries />
+				<TargetMarkets />
+				<Solutions />
+				<Faq />
+			</div>
 		</>
 	);
 }

@@ -17,7 +17,7 @@ const Solutions = () => {
 				<Image alt="oro R art" src={rImg} height={288} />
 				<CircleCard
 					title="ORO"
-					subtitle="Advisory"
+					subtitle="Advisory Program"
 					text="Investment advisory and direct access to opportunities for clients and institutions"
 				/>
 			</div>
