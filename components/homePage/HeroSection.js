@@ -2,9 +2,11 @@ import ButtonPrimary from "components/ButtonPrimary";
 import Image from "next/image";
 import Link from "next/link";
 import oroArtWhite from "public/assets/oroArt-white.svg";
+import oroArtBlack from "public/assets/oroArt-black.svg";
 import { BsChevronDoubleDown, BsFillMoonFill } from "react-icons/bs";
-import { switchBg } from "./switchBg";
+import { useTheme } from "next-themes";
 const HeroSection = () => {
+	const { theme } = useTheme();
 	return (
 		<>
 			<section className=" container relative z-30 flex h-[85vh] flex-col content-center items-center justify-center text-center">
@@ -34,8 +36,11 @@ const HeroSection = () => {
 			</section>
 
 			<div className=" absolute top-[20%] right-[0px] -z-10 bg-fixed	 pl-10 opacity-70 dark:z-10">
-				{/* <Image src={oroArtWhite} alt="ORO ART" objectFit="cover" /> */}
-				{switchBg()}
+				{theme === "light" ? (
+					<Image src={oroArtWhite} alt="ORO ART" objectFit="cover" />
+				) : (
+					<Image src={oroArtBlack} alt="ORO ART" objectFit="cover" />
+				)}
 			</div>
 		</>
 	);

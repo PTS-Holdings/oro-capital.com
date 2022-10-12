@@ -2,7 +2,6 @@ import { useTheme } from "next-themes";
 export const ThemeChanger = () => {
 	const { systemTheme, theme, setTheme } = useTheme();
 	const currentTheme = theme === "system" ? systemTheme : theme;
-	console.log("111", currentTheme);
 	if (currentTheme === "dark") {
 		return (
 			<button className=" " onClick={() => setTheme("light")}>

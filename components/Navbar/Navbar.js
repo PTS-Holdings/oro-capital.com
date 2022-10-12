@@ -1,20 +1,32 @@
 import Image from "next/image";
 import oroCapitalBlackLogo from "public/assets/capitalLogo-black.svg";
+import oroCapitalWhiteLogo from "public/assets/capitalLogo-white.svg";
 import { NavLinks } from "./navLinks";
 import { useState } from "react";
 import { ThemeChanger } from "./darkMode";
+import { useTheme } from "next-themes";
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
+	const { theme } = useTheme();
 	return (
 		<nav className=" py-5 dark:bg-neutral-800 ">
 			<div className="container flex content-center justify-between ">
 				<div className="my-auto">
-					<Image
-						alt="Oro Capital Logo"
-						src={oroCapitalBlackLogo}
-						height={50}
-						width={90}
-					/>
+					{theme === "light" ? (
+						<Image
+							alt="Oro Capital Logo"
+							src={oroCapitalBlackLogo}
+							height={50}
+							width={90}
+						/>
+					) : (
+						<Image
+							alt="Oro Capital Logo"
+							src={oroCapitalWhiteLogo}
+							height={50}
+							width={90}
+						/>
+					)}
 				</div>
 				{/* Navigation Links */}
 				<ul
