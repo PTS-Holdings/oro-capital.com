@@ -13,6 +13,7 @@ module.exports = {
 					dark: "#d1750e",
 					light: "#f3ba2c",
 				},
+				brownDark: " #262424",
 			},
 			container: {
 				padding: "1rem",

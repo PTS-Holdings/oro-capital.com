@@ -2,7 +2,7 @@ import CircleCard from "components/CircleCard";
 
 const Team = () => {
 	return (
-		<section className=" container md:px-8">
+		<section className=" container md:px-8" id="team">
 			<h2 className="mb-8 text-3xl font-bold ">
 				About Our <span className="text-primaryOrange">Team</span>
 			</h2>

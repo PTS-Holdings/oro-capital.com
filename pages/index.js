@@ -2,6 +2,7 @@ import CircleCard from "components/CircleCard";
 import Faq from "components/homePage/Faq";
 import GlobalMap from "components/homePage/GlobalMap";
 import HeroSection from "components/homePage/HeroSection";
+import InfoGrid from "components/homePage/InfoGrid";
 import Solutions from "components/homePage/Solutions";
 import Subsidiaries from "components/homePage/Subsidiaries";
 import TargetMarkets from "components/homePage/TargetMarkets";
@@ -19,12 +20,15 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<HeroSection />
-			<Team />
-			<GlobalMap />
-			<Subsidiaries />
-			<TargetMarkets />
-			<Solutions />
-			<Faq />
+			<div className="my-16 flex snap-y snap-start flex-col gap-32	">
+				<InfoGrid />
+				<Team />
+				<GlobalMap />
+				<Subsidiaries />
+				<TargetMarkets />
+				<Solutions />
+				<Faq />
+			</div>
 		</>
 	);
 }
