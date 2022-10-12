@@ -27,7 +27,13 @@ export const Navbar = () => {
 						}`}
 				>
 					{NavLinks.map((navLink) => (
-						<li key={navLink.link} className="text-center">
+						<li
+							key={navLink.link}
+							className="text-center"
+							onClick={() => {
+								setOpen(!open);
+							}}
+						>
 							<a href={navLink.link}>{navLink.displayName}</a>
 						</li>
 					))}
