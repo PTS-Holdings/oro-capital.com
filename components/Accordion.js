@@ -4,11 +4,11 @@ const Accordion = ({ title, text, opened }) => {
 	const [isOpen, setIsOpen] = useState(opened || false);
 
 	return (
-		<div className="relative z-10 overflow-hidden md:w-2/3">
+		<div className="relative z-10 overflow-hidden 	 md:w-2/3">
 			<div
 				onClick={() => setIsOpen(!isOpen)}
-				className={`flex w-full cursor-pointer items-center rounded py-4 text-xl  font-semibold transition-all duration-300 ease-in-out hover:bg-slate-200 ${
-					isOpen && "bg-slate-200"
+				className={`flex w-full cursor-pointer items-center rounded py-4 text-xl   font-semibold transition-all duration-300 ease-in-out hover:bg-slate-200 dark:hover:text-neutral-800 ${
+					isOpen && "bg-slate-200 "
 				}`}
 			>
 				<span
