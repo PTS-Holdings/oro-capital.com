@@ -89,10 +89,11 @@ const InfoGrid = () => {
 				</div>
 				<div className={`text-lg md:w-1/2 md:pr-16`}>
 					<p>
-						We are the designed investment guide that establishes
-						financial prosperity, creates sustainable economic
-						gains, the hassle-free, smart experienced that allows
-						entities and individuals to get closer to their goals.
+						We are here to offer your business the most flexible
+						portfolio management and investment solution operating
+						fully serviced for short-term and long-term investments.
+						It is to ensure your personalized portfolio investment
+						is managed seamlessly
 					</p>
 				</div>
 			</div>
