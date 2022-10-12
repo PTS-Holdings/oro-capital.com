@@ -3,7 +3,7 @@ import Image from "next/image";
 import rImg from "public/assets/r.svg";
 const Solutions = () => {
 	return (
-		<section id="targetMarket" className=" container">
+		<section id="solution" className=" container">
 			<h2 className="text-3xl font-bold">
 				What is{" "}
 				<span className="text-primaryOrange">our solutions?</span>

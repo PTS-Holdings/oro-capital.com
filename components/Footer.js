@@ -72,7 +72,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container mt-2 flex justify-between text-sm font-bold text-gray-300">
+			<div className="container mt-2 flex justify-between text-[12px] font-bold text-gray-300">
 				<p>PTS INVESTMENT HOLDINGS</p>
 				<p>ALL RIGHTS RECEIVED 2022 ®</p>
 			</div>
