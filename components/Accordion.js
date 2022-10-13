@@ -22,7 +22,7 @@ const Accordion = ({ title, text, opened }) => {
 			</div>
 			<div
 				className={`w-full rounded-b-lg  bg-slate-100 p-8 transition-all duration-200 ease-in-out  dark:bg-gray-600
-					${!isOpen && "absolute -translate-y-96 pt-2 "}
+					${!isOpen && "absolute -translate-y-[500px] pt-2 "}
 				`}
 			>
 				<p>{text}</p>

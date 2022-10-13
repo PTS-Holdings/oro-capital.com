@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }) {
 			<div className=" dark:bg-neutral-800 dark:text-white">
 				<Layout>
 					<ToastContainer />
-
 					<Component {...pageProps} />
 				</Layout>
 			</div>
