@@ -8,7 +8,6 @@ import Subsidiaries from "components/homePage/Subsidiaries";
 import TargetMarkets from "components/homePage/TargetMarkets";
 import Team from "components/homePage/Team";
 import Head from "next/head";
-
 export default function Home() {
 	return (
 		<>
@@ -20,7 +19,6 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
 			<HeroSection />
 			<div className="my-16 flex snap-y snap-start flex-col gap-32	">
 				<InfoGrid />

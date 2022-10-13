@@ -3,7 +3,7 @@ import mapImg from "public/assets/map.png";
 
 const GlobalMap = () => {
 	return (
-		<section className="bg-[#F5F5F5] py-16">
+		<section className="bg-[#F5F5F5] py-16 dark:text-gray-900	">
 			<div className="container flex w-full flex-wrap items-center justify-between gap-8">
 				<div>
 					<h2 className="mb-4 text-3xl font-bold">

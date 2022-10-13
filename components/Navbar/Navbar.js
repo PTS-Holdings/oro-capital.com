@@ -1,27 +1,37 @@
 import Image from "next/image";
 import oroCapitalBlackLogo from "public/assets/capitalLogo-black.svg";
+import oroCapitalWhiteLogo from "public/assets/capitalLogo-white.svg";
 import { NavLinks } from "./navLinks";
-
 import { useState } from "react";
-import { BsFillMoonFill } from "react-icons/bs";
-
+import { ThemeChanger } from "./darkMode";
+import { useTheme } from "next-themes";
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
+	const { theme } = useTheme();
 	return (
-		<nav className=" py-5 ">
+		<nav className=" py-5 dark:bg-neutral-800 ">
 			<div className="container flex content-center justify-between ">
 				<div className="my-auto">
-					<Image
-						alt="Oro Capital Logo"
-						src={oroCapitalBlackLogo}
-						height={50}
-						width={90}
-					/>
+					{theme === "light" ? (
+						<Image
+							alt="Oro Capital Logo"
+							src={oroCapitalBlackLogo}
+							height={50}
+							width={90}
+						/>
+					) : (
+						<Image
+							alt="Oro Capital Logo"
+							src={oroCapitalWhiteLogo}
+							height={50}
+							width={90}
+						/>
+					)}
 				</div>
 				{/* Navigation Links */}
 				<ul
-					className={`absolute z-10  flex w-screen flex-col gap-6
-					 overflow-hidden bg-white transition-all duration-300 ease-in-out
+					className={`absolute z-10  flex w-screen flex-col gap-6 overflow-hidden bg-white
+					 transition-all duration-300 ease-in-out dark:bg-neutral-800 dark:text-white
 					 md:static md:w-auto md:flex-row md:content-center md:items-center ${
 							open ? "h-[90vh]} top-24" : "-top-96"
 						}`}
@@ -37,14 +47,12 @@ export const Navbar = () => {
 							<a href={navLink.link}>{navLink.displayName}</a>
 						</li>
 					))}
-					<li>
-						<BsFillMoonFill />
-					</li>
+					<li>{ThemeChanger()}</li>
 				</ul>
 
 				{/* hamburger button */}
 				<div
-					className="relative z-50 my-auto flex h-7 w-7 flex-col items-center justify-between md:hidden"
+					className="relative z-50 my-auto flex h-7 w-7 flex-col items-center justify-between  md:hidden "
 					onClick={() => {
 						setOpen(!open);
 					}}

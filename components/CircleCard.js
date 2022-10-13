@@ -1,7 +1,7 @@
 const CircleCard = ({ title, subtitle, text }) => {
 	return (
 		<div
-			className={`flex flex-col content-center items-center justify-center rounded-full border border-gray-800/40 p-10  text-center ${
+			className={`flex flex-col content-center items-center justify-center rounded-full border border-gray-800/40 p-10 text-center  dark:border-zinc-50 ${
 				title || subtitle
 					? "h-[18rem] w-[18rem]"
 					: "h-[14rem] w-[14rem]"
