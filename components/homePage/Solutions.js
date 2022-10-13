@@ -12,13 +12,13 @@ const Solutions = () => {
 				<CircleCard
 					title="ORO"
 					subtitle="Wealth Program"
-					text="Diversify investments according to persona for clients & institutions"
+					text="Diversify investments according to persona of clients & institutions"
 				/>
 				<Image alt="oro R art" src={rImg} height={288} />
 				<CircleCard
 					title="ORO"
 					subtitle="Advisory Program"
-					text="Investment advisory and direct access to opportunities for clients and institutions"
+					text="Investment advisory and direct access to opportunities of clients and institutions"
 				/>
 			</div>
 		</section>

@@ -9,15 +9,15 @@ const TargetMarkets = () => {
 			<div className="mt-4 flex flex-col items-center justify-center gap-10 md:flex-row  md:gap-7">
 				<CircleCard
 					title="Capital Markets"
-					text="Support In Trading Commodities, Forex, Indices And Stocks"
+					text="Support in trading commodities, forex, indices & stocks"
 				/>
 				<CircleCard
 					title="Startups"
-					text="Opportunity to build a portfolio in startups through our subsidiary ORO partners"
+					text="Opportunity to build a portfolio in startups through our affiliate Oro Partners"
 				/>
 				<CircleCard
 					title="Private Equity Opportunities"
-					text="Direct access for attractive opportunities in insurance, real estate, supply chain, and much more"
+					text="Direct access to attractive opportunities in insurance, real estate, supply chain, & much more"
 				/>
 			</div>
 		</section>

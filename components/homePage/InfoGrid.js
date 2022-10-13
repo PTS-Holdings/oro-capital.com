@@ -23,7 +23,7 @@ const InfoGrid = () => {
 					<p>
 						We are the designed investment guide that establishes
 						financial prosperity, creates sustainable economic
-						gains, the hassle-free, smart experienced that allows
+						gains, hassle-free, smart experiences that allows
 						entities and individuals to get closer to their goals.
 					</p>
 				</div>
@@ -119,10 +119,11 @@ const InfoGrid = () => {
 						Financial institutions are not the most reliable, zero
 						provision of support services, no technical basis, no
 						investment guidance, so we offer you the solution for
-						your portfolio management. Whether you want a capital
-						market investment plan for your company&apos;s assets,
-						budgeting plan, private equity investment or even a
-						start-up fundraising.
+						your portfolio management. Whether you want to manage
+						investment in capital market, develop investment plan
+						for your company, financial modeling and evaluation,
+						business planning your company, private equity
+						investment or even a high potential start-up investment
 					</p>
 				</div>
 			</div>
@@ -147,8 +148,11 @@ const InfoGrid = () => {
 						projects and partnering up with several investment
 						related entities, we deliver highly well-planned
 						portfolio management services with the qualities of our
-						support services and the provision of our cyclical
-						analysis, so our clients will sustain secured financial
+						support services and the provision of{" "}
+						<span className="font-bold text-primaryOrange">
+							our cyclical analysis{" "}
+						</span>{" "}
+						, so our clients will sustain secured financial
 						regulation
 					</p>
 				</div>

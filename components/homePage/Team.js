@@ -9,12 +9,12 @@ const Team = () => {
 			<div className="mt-4 flex  flex-wrap items-center justify-center gap-10 md:flex-row md:gap-7">
 				<CircleCard text="PHD holders" />
 				<CircleCard text="Certified from well recognized international entities" />
-				<CircleCard text="Valuation Analysis" />
+				<CircleCard text="Valuation analysts" />
 				<CircleCard text="Recognized on global ranks" />
 				<CircleCard text="Diversified expertise" />
 				<CircleCard text="Certified asset managers" />
-				<CircleCard text="Recognized Financial Modelers" />
-				<CircleCard text="Expertise and certification Exp. CFT, CETA" />
+				<CircleCard text="Recognized financial modelers" />
+				<CircleCard text="Expertise and certification Exp. CFTe" />
 			</div>
 		</section>
 	);

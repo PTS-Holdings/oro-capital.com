@@ -1,10 +1,10 @@
 import ButtonPrimary from "components/ButtonPrimary";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import oroArtWhite from "public/assets/oroArt-white.svg";
 import oroArtBlack from "public/assets/oroArt-black.svg";
+import oroArtWhite from "public/assets/oroArt-white.svg";
 import { BsChevronDoubleDown, BsFillMoonFill } from "react-icons/bs";
-import { useTheme } from "next-themes";
 const HeroSection = () => {
 	const { theme } = useTheme();
 	return (
@@ -17,10 +17,10 @@ const HeroSection = () => {
 					</span>
 				</h1>
 				<p className="my-7  lg:text-lg">
-					Our Cyclical Analysis For Timing & Value Makes Us Unique
+					Our Cyclical Analysis for timing & value makes us unique
 					<br />
 					<strong>
-						Make The Right Investment In The Right Place
+						Make the right investment in the right place
 					</strong>
 				</p>
 
