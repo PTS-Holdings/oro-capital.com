@@ -93,7 +93,7 @@ const InfoGrid = () => {
 						portfolio management and investment solution operating
 						fully serviced for short-term and long-term investments.
 						It is to ensure your personalized portfolio investment
-						is managed seamlessly
+						is managed seamlessly.
 					</p>
 				</div>
 			</div>
@@ -123,7 +123,7 @@ const InfoGrid = () => {
 						investment in capital market, develop investment plan
 						for your company, financial modeling and evaluation,
 						business planning your company, private equity
-						investment or even a high potential start-up investment
+						investment or even a high potential start-up investment.
 					</p>
 				</div>
 			</div>
@@ -153,7 +153,7 @@ const InfoGrid = () => {
 							our cyclical analysis{" "}
 						</span>{" "}
 						, so our clients will sustain secured financial
-						regulation
+						regulation.
 					</p>
 				</div>
 			</div>
