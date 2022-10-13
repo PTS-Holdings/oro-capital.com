@@ -1,5 +1,8 @@
 import Layout from "Layout";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider, useTheme } from "next-themes";
+import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -7,6 +10,8 @@ function MyApp({ Component, pageProps }) {
 		<ThemeProvider attribute="class">
 			<div className=" dark:bg-neutral-800 dark:text-white">
 				<Layout>
+					<ToastContainer />
+
 					<Component {...pageProps} />
 				</Layout>
 			</div>

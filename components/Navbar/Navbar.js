@@ -1,10 +1,10 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import oroCapitalBlackLogo from "public/assets/capitalLogo-black.svg";
 import oroCapitalWhiteLogo from "public/assets/capitalLogo-white.svg";
-import { NavLinks } from "./navLinks";
 import { useState } from "react";
 import { ThemeChanger } from "./darkMode";
-import { useTheme } from "next-themes";
+import { NavLinks } from "./navLinks";
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	const { theme } = useTheme();
