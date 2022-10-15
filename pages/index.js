@@ -1,4 +1,5 @@
 import CircleCard from "components/CircleCard";
+import BlogRoom from "components/homePage/BlogRoom";
 import ContactForm from "components/homePage/ContactForm";
 import Faq from "components/homePage/Faq";
 import GlobalMap from "components/homePage/GlobalMap";
@@ -28,6 +29,7 @@ export default function Home() {
 				<Subsidiaries />
 				<TargetMarkets />
 				<Solutions />
+				<BlogRoom />
 				<Faq />
 				<ContactForm />
 			</div>
