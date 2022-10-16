@@ -29,7 +29,7 @@ export default function Home() {
 				<Subsidiaries />
 				<TargetMarkets />
 				<Solutions />
-				<BlogRoom />
+				{/* <BlogRoom /> */}
 				<Faq />
 				<ContactForm />
 			</div>
