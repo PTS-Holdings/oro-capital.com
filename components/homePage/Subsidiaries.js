@@ -19,13 +19,13 @@ const Subsidiaries = () => {
 						<Image
 							alt="ORO capital logo"
 							height={95}
-							src={capitalLogoBlack}
+							src={capitalLogoWhite}
 						/>
 					) : (
 						<Image
 							alt="ORO capital logo"
 							height={95}
-							src={capitalLogoWhite}
+							src={capitalLogoBlack}
 						/>
 					)}
 				</div>
@@ -35,13 +35,13 @@ const Subsidiaries = () => {
 						{theme === "light" ? (
 							<Image
 								alt="oro partners logo"
-								src={partnersLogoBlack}
+								src={partnersLogoWhite}
 								height={95}
 							/>
 						) : (
 							<Image
 								alt="oro partners logo"
-								src={partnersLogoWhite}
+								src={partnersLogoBlack}
 								height={95}
 							/>
 						)}
@@ -52,13 +52,13 @@ const Subsidiaries = () => {
 							<Image
 								alt="oro venture laps logo"
 								height={95}
-								src={ventureLogoBlack}
+								src={ventureLogoWhite}
 							/>
 						) : (
 							<Image
 								alt="oro venture laps logo"
 								height={95}
-								src={ventureLogoWhite}
+								src={ventureLogoBlack}
 							/>
 						)}
 					</div>

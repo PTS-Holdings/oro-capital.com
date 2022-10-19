@@ -12,9 +12,7 @@ const HeroSection = () => {
 			<section className=" container relative z-30 flex h-[85vh] flex-col content-center items-center justify-center text-center">
 				<h1 className="  text-4xl font-bold md:text-6xl lg:text-7xl">
 					Invest Safe <br /> &nbsp; &nbsp; &nbsp; &nbsp; Invest
-					<span span className="text-primaryOrange">
-						&nbsp;ORO
-					</span>
+					<span className="text-primaryOrange">&nbsp;ORO</span>
 				</h1>
 				<p className="my-7  lg:text-lg">
 					Our Cyclical Analysis for timing & value makes us unique
@@ -37,9 +35,9 @@ const HeroSection = () => {
 
 			<div className=" absolute top-[20%] right-[0px] -z-10 bg-fixed	 pl-10 opacity-70 dark:z-10">
 				{theme === "light" ? (
-					<Image src={oroArtWhite} alt="ORO ART" objectFit="cover" />
-				) : (
 					<Image src={oroArtBlack} alt="ORO ART" objectFit="cover" />
+				) : (
+					<Image src={oroArtWhite} alt="ORO ART" objectFit="cover" />
 				)}
 			</div>
 		</>

@@ -15,14 +15,14 @@ export const Navbar = () => {
 					{theme === "light" ? (
 						<Image
 							alt="Oro Capital Logo"
-							src={oroCapitalBlackLogo}
+							src={oroCapitalWhiteLogo}
 							height={50}
 							width={90}
 						/>
 					) : (
 						<Image
 							alt="Oro Capital Logo"
-							src={oroCapitalWhiteLogo}
+							src={oroCapitalBlackLogo}
 							height={50}
 							width={90}
 						/>
@@ -52,7 +52,9 @@ export const Navbar = () => {
 							</a>
 						</li>
 					))}
-					<li className="pb-4 text-center">{ThemeChanger()}</li>
+					<li className={`text-center ${open && "pb-4 md:pb-0"}`}>
+						{ThemeChanger()}
+					</li>
 				</ul>
 
 				{/* hamburger button */}

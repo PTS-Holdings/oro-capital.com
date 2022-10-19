@@ -15,12 +15,12 @@ export const NavLinks = [
 		displayName: "Solution",
 		link: "#solution",
 	},
-	{
-		displayName: "News",
-		link: "#news",
-	},
-	{
-		displayName: "Blog",
-		link: "#blog",
-	},
+	// {
+	// 	displayName: "News",
+	// 	link: "#news",
+	// },
+	// {
+	// 	displayName: "Blog",
+	// 	link: "#blog",
+	// },
 ];
