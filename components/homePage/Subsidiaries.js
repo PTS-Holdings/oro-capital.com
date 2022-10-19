@@ -15,7 +15,7 @@ const Subsidiaries = () => {
 			</h2>
 			<div className="mx-auto w-2/3">
 				<div className="mx-auto flex w-1/2 justify-center py-8 md:p-8">
-					{theme === "light" ? (
+					{theme === "dark" ? (
 						<Image
 							alt="ORO capital logo"
 							height={95}
@@ -32,7 +32,7 @@ const Subsidiaries = () => {
 
 				<div className="flex justify-between">
 					<div className="flex w-1/2 justify-center px-2 md:p-8">
-						{theme === "light" ? (
+						{theme === "dark" ? (
 							<Image
 								alt="oro partners logo"
 								src={partnersLogoWhite}
@@ -48,7 +48,7 @@ const Subsidiaries = () => {
 					</div>
 
 					<div className=" flex w-1/2 justify-center px-2  md:p-8">
-						{theme === "light" ? (
+						{theme === "dark" ? (
 							<Image
 								alt="oro venture laps logo"
 								height={95}

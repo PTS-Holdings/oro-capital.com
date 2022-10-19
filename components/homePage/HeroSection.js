@@ -34,11 +34,11 @@ const HeroSection = () => {
 			</section>
 
 			<div className=" absolute top-[20%] right-[0px] -z-10 bg-fixed	 pl-10 opacity-70 dark:z-10">
-				{theme === "light" ? (
-					<Image src={oroArtBlack} alt="ORO ART" objectFit="cover" />
-				) : (
-					<Image src={oroArtWhite} alt="ORO ART" objectFit="cover" />
-				)}
+				<Image
+					src={theme === "dark" ? oroArtBlack : oroArtWhite}
+					alt="ORO ART"
+					objectFit="cover"
+				/>
 			</div>
 		</>
 	);

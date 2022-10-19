@@ -12,21 +12,16 @@ export const Navbar = () => {
 		<nav className=" py-5 dark:bg-neutral-800 ">
 			<div className="flex content-center justify-between md:container ">
 				<div className="my-auto ml-8 md:ml-0">
-					{theme === "light" ? (
-						<Image
-							alt="Oro Capital Logo"
-							src={oroCapitalWhiteLogo}
-							height={50}
-							width={90}
-						/>
-					) : (
-						<Image
-							alt="Oro Capital Logo"
-							src={oroCapitalBlackLogo}
-							height={50}
-							width={90}
-						/>
-					)}
+					<Image
+						alt="Oro Capital Logo"
+						src={
+							theme === "dark"
+								? oroCapitalWhiteLogo
+								: oroCapitalBlackLogo
+						}
+						height={50}
+						width={90}
+					/>
 				</div>
 				{/* Navigation Links */}
 				<ul
