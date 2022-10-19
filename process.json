@@ -1,6 +1,9 @@
 {
     "apps": [{
         "name" : "OroCapital.com",
-        "script" : "./server.js"
+        "script" : "./server.js",
+        "env":{
+            "PORT" : 3001
+        }
     }]
 }
