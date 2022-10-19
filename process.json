@@ -1,6 +1,6 @@
 {
     "apps": [{
-        "name" : "OroCapital.com",
+        "name" : "oro-capital.com",
         "script" : "./server.js",
         "env":{
             "PORT" : 3001
