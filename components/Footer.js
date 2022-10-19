@@ -32,7 +32,7 @@ const Footer = () => {
 						<h3 className=" text-lg font-semibold">Office</h3>
 						<div className="flex items-center gap-2 font-light">
 							<MdLocationOn />{" "}
-							<span>Agora, El Louts, New Cairo</span>
+							<span>Agora, El Lotus, New Cairo</span>
 						</div>
 					</div>
 
