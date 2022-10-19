@@ -14,7 +14,7 @@ const Team = () => {
 				<CircleCard text="Diversified expertise" />
 				<CircleCard text="Certified asset managers" />
 				<CircleCard text="Recognized financial modelers" />
-				<CircleCard text="Expertise and certification Exp. CFTe" />
+				<CircleCard text="Expertise and certification CFTe" />
 			</div>
 		</section>
 	);
