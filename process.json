@@ -1,0 +1,6 @@
+{
+    "apps": [{
+        "name" : "OroCapital.com",
+        "script" : "./server.js"
+    }]
+}
