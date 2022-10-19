@@ -44,10 +44,15 @@ export const Navbar = () => {
 								setOpen(!open);
 							}}
 						>
-							<a href={navLink.link}>{navLink.displayName}</a>
+							<a
+								href={navLink.link}
+								className="pb-4 hover:border-b"
+							>
+								{navLink.displayName}
+							</a>
 						</li>
 					))}
-					<li>{ThemeChanger()}</li>
+					<li className="pb-4 text-center">{ThemeChanger()}</li>
 				</ul>
 
 				{/* hamburger button */}
