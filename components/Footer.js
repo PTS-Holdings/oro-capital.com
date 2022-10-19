@@ -30,17 +30,18 @@ const Footer = () => {
 
 					<div className="mb-4">
 						<h3 className=" text-lg font-semibold">Office</h3>
-						<p className="flex items-center gap-2 font-light">
-							<MdLocationOn /> Agora, El Louts, New Cairo
-						</p>
+						<div className="flex items-center gap-2 font-light">
+							<MdLocationOn />{" "}
+							<span>Agora, El Louts, New Cairo</span>
+						</div>
 					</div>
 
 					<div className="mb-4">
 						<h3 className="text-lg font-semibold">Email</h3>
-						<p className="flex items-center gap-2 font-light">
+						<div className="flex items-center gap-2 font-light">
 							<MdEmail />
 							Info@oro-capital.com
-						</p>
+						</div>
 					</div>
 
 					<div className="mb-4">
@@ -51,24 +52,28 @@ const Footer = () => {
 							<Link
 								href={"https://www.facebook.com/OROventuresLab"}
 							>
-								<ImFacebook2 />
+								<di>
+									<ImFacebook2 />
+								</di>
 							</Link>
 							<Link
 								href={
 									"https://www.linkedin.com/company/oroventureslab/"
 								}
 							>
-								<ImLinkedin />
+								<div>
+									<ImLinkedin />
+								</div>
 							</Link>
 						</div>
 					</div>
 
 					<div className="mb-8">
 						<h3 className="text-lg font-semibold">Phone</h3>
-						<p className="flex items-center gap-2 font-light">
+						<div className="flex items-center gap-2 font-light">
 							<MdPhone />
 							+20 106 499 3381
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
