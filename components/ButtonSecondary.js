@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-const ButtonSecondary = ({ children, onclick }) => {
+const ButtonSecondary = ({ children, onclick, isDisabled = false }) => {
 	return (
 		<button
-			className=" group relative overflow-hidden rounded-full  border  border-gray-300     "
+			className=" group relative overflow-hidden rounded-full  border border-gray-300  transition-all     "
 			onclick={onclick}
+			disabled={isDisabled}
 		>
 			<span class="ease absolute top-0 left-0 h-0 w-0 border-t-2 border-primaryOrange-light transition-all duration-200 group-hover:w-full"></span>
 			<span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-primaryOrange-light transition-all duration-200 group-hover:w-full"></span>

@@ -24,7 +24,7 @@ const HeroSection = () => {
 					</strong>
 				</p>
 
-				<Link href="/contact" passHref>
+				<Link href="#contact" passHref>
 					<div>
 						<ButtonPrimary className="mx-auto">
 							{"Let's Get In Touch"}

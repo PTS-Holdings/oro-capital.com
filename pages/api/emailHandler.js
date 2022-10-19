@@ -18,9 +18,9 @@ export default async function emailHandler(req, res) {
 	if (!emailPayload["from"])
 		emailPayload[
 			"from"
-		] = `"Oro Capital Mail Client" <no-reply@oro-capital.com>`;
+		] = `"Oro Capital Mail Client" <noreply@oro-capital.com>`;
 
-	if (!emailPayload["to"]) emailPayload["to"] = CONFIG_ADMIN_EMAIL;
+	if (!emailPayload["to"]) emailPayload["to"] = "info@oro-capital.com";
 
 	// Open nodemailer transporter
 	const transporter = nodemailer.createTransport({
@@ -37,7 +37,7 @@ export default async function emailHandler(req, res) {
 	transporter.sendMail(emailPayload, function (err, info) {
 		if (err) {
 			console.log(err);
-			res.status(500).send();
+			res.status(500).end(err);
 		} else {
 			console.log(info);
 			res.status(200).send();

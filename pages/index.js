@@ -31,7 +31,9 @@ export default function Home() {
 				<Solutions />
 				{/* <BlogRoom /> */}
 				<Faq />
-				<ContactForm />
+				<div id="contact">
+					<ContactForm />
+				</div>
 			</div>
 		</>
 	);

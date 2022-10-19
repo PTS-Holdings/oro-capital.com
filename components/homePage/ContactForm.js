@@ -1,6 +1,7 @@
 import ButtonSecondary from "components/ButtonSecondary";
 import { useState } from "react";
 import { MdEmail } from "react-icons/md";
+import { VscLoading } from "react-icons/vsc";
 import { toast, ToastContainer } from "react-toastify";
 import { sendEmail } from "utils/mail";
 
@@ -11,8 +12,14 @@ const ContactForm = () => {
 	const [message, setMessage] = useState("");
 	const [phone, setPhone] = useState("");
 
+	// Button state
+	const [isLoading, setLoading] = useState(false);
+
 	const onSubmitHandler = (e) => {
 		e.preventDefault();
+
+		// Start loading animation
+		setLoading(true);
 
 		// Generate email payload for admin & user
 		const adminPayload = {
@@ -28,7 +35,7 @@ const ContactForm = () => {
 
 		const userPayload = {
 			to: email,
-			from: `"Oro Capital" <no-reply@oro-capital.com>`,
+			from: `"Oro Capital" <noreply@oro-capital.com>`,
 			subject: `We received your inquiry`,
 			html: `<p>Hello ${name},
             <br/>
@@ -37,8 +44,8 @@ const ContactForm = () => {
             meanwhile, take a look on our <a href="oro-capital.com/#faq">FAQ section</a>for more information.
             <br/>
             <br/>
-            Thanks,
-            Kemtech team
+            Best Regards,
+            Oro Capital Team
             </p>`,
 		};
 
@@ -50,8 +57,10 @@ const ContactForm = () => {
 					setMessage("");
 					setPhone("");
 					toast.success("Sent successfully, we will get to you soon");
+					setLoading(false);
 				} else {
 					toast.error("Something went wrong, try again later");
+					setLoading(false);
 				}
 			})
 			.then(sendEmail(userPayload));
@@ -126,11 +135,19 @@ const ContactForm = () => {
 						required
 					></textarea>
 				</div>
-				<button type={"submit"}>
-					<ButtonSecondary>
-						<MdEmail /> Submit
+				<div>
+					<ButtonSecondary isDisabled={isLoading}>
+						{isLoading ? (
+							<div className="animate-spin">
+								<VscLoading />
+							</div>
+						) : (
+							<div className="flex items-center gap-4">
+								<MdEmail /> Submit
+							</div>
+						)}
 					</ButtonSecondary>
-				</button>
+				</div>
 			</form>
 		</section>
 	);
