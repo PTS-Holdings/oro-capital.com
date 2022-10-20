@@ -5,7 +5,7 @@ const Solutions = () => {
 	return (
 		<section id="solution" className=" container">
 			<h2 className="text-3xl font-bold">
-				What is{" "}
+				What are{" "}
 				<span className="text-primaryOrange">our solutions?</span>
 			</h2>
 			<div className="mt-4 flex flex-col items-center justify-center gap-10 md:flex-row  md:gap-7">
