@@ -40,7 +40,7 @@ const Footer = () => {
 						<h3 className="text-lg font-semibold">Email</h3>
 						<div className="flex items-center gap-2 font-light">
 							<MdEmail />
-							Info@oro-capital.com
+							<span>Info@oro-capital.com</span>
 						</div>
 					</div>
 
@@ -52,9 +52,9 @@ const Footer = () => {
 							<Link
 								href={"https://www.facebook.com/OROventuresLab"}
 							>
-								<di>
+								<div>
 									<ImFacebook2 />
-								</di>
+								</div>
 							</Link>
 							<Link
 								href={
@@ -72,7 +72,7 @@ const Footer = () => {
 						<h3 className="text-lg font-semibold">Phone</h3>
 						<div className="flex items-center gap-2 font-light">
 							<MdPhone />
-							+20 106 499 3381
+							<span>+20 106 499 3381</span>
 						</div>
 					</div>
 				</div>
