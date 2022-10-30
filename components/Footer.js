@@ -29,10 +29,23 @@ const Footer = () => {
 					<h2 className="mb-2 text-xl font-extrabold">Contact Us</h2>
 
 					<div className="mb-4">
-						<h3 className=" text-lg font-semibold">Office</h3>
-						<div className="flex items-center gap-2 font-light">
+						<h3 className=" text-lg font-semibold">offices</h3>
+						<div className="mb-2 flex items-center gap-2 font-light">
 							<MdLocationOn />{" "}
-							<span>Agora, El Lotus, New Cairo</span>
+							<span>Agora Mall, EL Nasr, New Cairo, EGY</span>
+						</div>
+						<div className="mb-2 flex items-center gap-2 font-light">
+							<MdLocationOn />{" "}
+							<span>
+								16192 Coastal Highway Lew as Delaware, USA
+							</span>
+						</div>
+						<div className="mb-2 flex items-center gap-2 font-light">
+							<MdLocationOn />{" "}
+							<span>
+								71-75 Shelton St., Covent Garden, WC2H 9JQ,
+								Greater London, UK
+							</span>
 						</div>
 					</div>
 
@@ -44,7 +57,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className="mb-4">
+					{/* <div className="mb-4">
 						<h3 className="mb-2 text-lg font-semibold">
 							Social media
 						</h3>
@@ -66,18 +79,18 @@ const Footer = () => {
 								</div>
 							</Link>
 						</div>
-					</div>
+					</div> */}
 
-					<div className="mb-8">
+					{/* <div className="mb-8">
 						<h3 className="text-lg font-semibold">Phone</h3>
 						<div className="flex items-center gap-2 font-light">
 							<MdPhone />
 							<span>+20 106 499 3381</span>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
-			<div className="container mt-2 flex justify-between text-[12px] font-bold text-gray-300">
+			<div className="container mt-2 flex justify-between text-[10px] font-bold text-gray-300">
 				<p>PTS INVESTMENT HOLDINGS</p>
 				<p>ALL RIGHTS RECEIVED 2022 ®</p>
 			</div>
