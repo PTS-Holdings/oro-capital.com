@@ -10,16 +10,16 @@ const InfoGrid = () => {
 			className="container flex snap-y snap-start flex-col gap-12	md:gap-20"
 		>
 			{/*------ ROW 1 ----- */}
-			<div className="flex flex-col justify-center pt-8 md:flex-row md:items-center">
+			<div className="flex flex-col  pt-8 md:flex-row md:items-center">
 				<div className="mb-2 md:w-1/2">
 					<p className="font-bold text-primaryOrange">
 						ORO gives every dollar a job
 					</p>
-					<h2 className=" text-3xl font-extrabold lg:text-5xl">
+					<h2 className=" text-3xl font-extrabold lg:text-6xl">
 						Who We Are ?
 					</h2>
 				</div>
-				<div className={`text-lg md:w-1/2 md:pr-16`}>
+				<div className={`text-3xl md:w-1/2 md:pr-16`}>
 					<p>
 						We are the designed investment guide that establishes
 						financial prosperity, creates sustainable economic
@@ -31,7 +31,7 @@ const InfoGrid = () => {
 
 			{/*------ ROW 2 ----- */}
 			<div className="flex flex-col  md:flex-row md:items-center">
-				<div className=" text-2xl font-semibold md:w-1/2 md:pr-32 md:text-center">
+				<div className=" text-3xl font-semibold md:w-1/2  md:pr-32 md:text-left	">
 					<h2>
 						We focus on{" "}
 						<span className="font-bold text-primaryOrange">
@@ -42,7 +42,7 @@ const InfoGrid = () => {
 				</div>
 
 				<div
-					className={` relative mt-8 h-64 overflow-hidden rounded-xl md:w-1/3`}
+					className={` relative mt-8 h-96 overflow-hidden rounded-xl md:w-1/2`}
 				>
 					<Image
 						alt="Photo by micheile on Unsplash - Plant in pot of money"
@@ -55,7 +55,7 @@ const InfoGrid = () => {
 
 			{/*------ ROW 3 ----- */}
 			<div className="flex flex-col  md:flex-row md:items-center">
-				<div className=" text-lg font-semibold md:w-1/2 md:pr-32 md:text-center">
+				<div className=" text-3xl  md:w-1/2 md:pr-32 md:text-left">
 					<h2>
 						Creating an extraordinary culture of first movers,
 						investment capitalist and entrepreneurial mindsets, one
@@ -66,7 +66,7 @@ const InfoGrid = () => {
 				</div>
 
 				<div
-					className={`relative mt-8 h-64 overflow-hidden rounded-xl md:w-1/3 `}
+					className={`relative mt-8 h-96 overflow-hidden rounded-xl md:w-1/2 `}
 				>
 					<Image
 						alt="Photo by Precondo CA on Unsplash - Investment word on cubes"
@@ -79,15 +79,15 @@ const InfoGrid = () => {
 
 			{/*------ ROW 4 ----- */}
 			<div className="flex flex-col justify-center pt-8 md:flex-row md:items-center">
-				<div className="mb-2 md:w-1/2 md:text-center">
-					<h2 className=" text-2xl font-bold lg:text-3xl">
+				<div className="mb-2 md:w-1/2 md:text-left">
+					<h2 className=" text-3xl font-bold lg:text-4xl">
 						<span className="font-extrabold text-primaryOrange">
 							ORO Capital
 						</span>{" "}
 						is the solution
 					</h2>
 				</div>
-				<div className={`text-lg md:w-1/2 md:pr-16`}>
+				<div className={`text-3xl md:w-1/2 md:pr-16`}>
 					<p>
 						We are here to offer your business the most flexible
 						portfolio management and investment solution operating
@@ -99,9 +99,9 @@ const InfoGrid = () => {
 			</div>
 
 			{/*------ ROW 5 ----- */}
-			<div className="flex flex-col-reverse justify-center md:flex-row md:items-center">
+			<div className="flex flex-col-reverse justify-center  md:flex-row  md:items-center">
 				<div
-					className={`relative mt-8  h-64 overflow-hidden rounded-xl md:w-1/3 `}
+					className={`relative h-96 overflow-hidden  rounded-xl pr-32  md:w-1/2 `}
 				>
 					<Image
 						alt="Photo by JESHOOTS.COM on Unsplash - playing chess"
@@ -111,11 +111,11 @@ const InfoGrid = () => {
 					/>
 				</div>
 
-				<div className=" md:w-1/2 md:pl-32 ">
-					<h2 className="mb-2 text-2xl font-bold">
+				<div className=" md:w-1/2  ">
+					<h2 className="mb-2 text-5xl font-bold">
 						Why we&apos;re here
 					</h2>
-					<p>
+					<p className="text-2xl">
 						Financial institutions are not the most reliable, zero
 						provision of support services, no technical basis, no
 						investment guidance, so we offer you the solution for
@@ -131,7 +131,7 @@ const InfoGrid = () => {
 			{/*------ ROW 6 ----- */}
 			<div className="flex flex-col-reverse justify-center md:flex-row md:items-center">
 				<div
-					className={` relative mt-8 h-64 overflow-hidden rounded-xl md:w-1/3 `}
+					className={` relative  mr-32 h-96 overflow-hidden  rounded-xl md:w-1/2 `}
 				>
 					<Image
 						alt="Photo by Kelly Sikkema Unsplash - Buy Sell"
@@ -141,9 +141,9 @@ const InfoGrid = () => {
 					/>
 				</div>
 
-				<div className=" md:w-1/2 md:pl-32 ">
-					<h2 className="mb-2 text-2xl font-bold">How we do it</h2>
-					<p>
+				<div className=" md:w-1/2  ">
+					<h2 className="mb-2 text-5xl font-bold">How we do it</h2>
+					<p className="text-3xl">
 						By scouting and investigating the most promising
 						projects and partnering up with several investment
 						related entities, we deliver highly well-planned
