@@ -16,7 +16,7 @@ module.exports = {
 				brownDark: " #262424",
 			},
 			container: {
-				padding: "1rem",
+				padding: "2rem",
 				center: true,
 			},
 		},
